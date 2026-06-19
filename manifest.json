@@ -1,0 +1,33 @@
+{
+  "name": "cortex-plugin-interactive-tutorials",
+  "version": "1.0.0",
+  "description": "Interactive Tutorial Generator — Generate step-by-step tutorials from codebases with sandboxed execution",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-interactive-tutorials",
+  "homepage": "https://cortexprism.io/marketplace/plugins/interactive-tutorials",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "tutorial_generate",
+      "description": "Generate tutorial from codebase or API",
+      "params": []
+    },
+    {
+      "name": "tutorial_add_exercise",
+      "description": "Add interactive exercise with validation",
+      "params": []
+    },
+    {
+      "name": "tutorial_export",
+      "description": "Export tutorial to Mintlify or GitBook",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
