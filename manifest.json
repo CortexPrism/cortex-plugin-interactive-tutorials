@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-interactive-tutorials",
-  "version": "1.0.0",
-  "description": "Interactive Tutorial Generator — Generate step-by-step tutorials from codebases with sandboxed execution",
+  "version": "1.0.1",
+  "description": "Interactive Tutorial Generator \u2014 Generate step-by-step tutorials from codebases with sandboxed execution",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-interactive-tutorials",
   "homepage": "https://cortexprism.io/marketplace/plugins/interactive-tutorials",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "tutorial_generate",
@@ -28,6 +31,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
